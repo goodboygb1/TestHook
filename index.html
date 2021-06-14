@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="application/javascript">
+function openReview() {
+    window.webkit.messageHandlers.openReview.postMessage({
+        bookingId: 1,
+        propertyId: 2,
+        checkinDate: new Date(),
+        checkoutDate: new Date(),
+        countryId: 3,
+    });
+}        
+        </script>
+    </head>
+    <body>
+        <button onclick="openReview()">Call Hook</button>
+    </body>
+</html>
